@@ -18,7 +18,7 @@ const nbRow = 9 , nbCol = 9, largeurBrique = 63, hauteurBrique = 20
 function dessineBalle() {
     ctx.beginPath()
     ctx.arc(x, y, rayonBalle, 0, Math.PI*2)
-    ctx.fillStyle = "#333"
+    ctx.fillStyle = "rgb(255 255 255)"
     ctx.fill()
     ctx.closePath()
 }
@@ -28,7 +28,7 @@ function dessineBalle() {
 function dessineBarre() {
     ctx.beginPath()
     ctx.rect(barreX, canvas.height - barreHeight - 2, barreWidth, barreHeight)
-    ctx.fillStyle = '#333'
+    ctx.fillStyle = 'rgb(230, 34, 34)'
     ctx.fill()
     ctx.closePath()
 }
@@ -62,7 +62,7 @@ function dessineBriques(){
                 
                 ctx.beginPath()
                 ctx.rect(briqueX, briqueY, largeurBrique, hauteurBrique)
-                ctx.fillStyle = "black"
+                ctx.fillStyle = "rgb(200 229 243)"
                 ctx.fill()
                 ctx.closePath()
             }           
@@ -101,12 +101,11 @@ function dessine() {
 
         else {
             fin = true;
-            affichageScore.innerHTML = `Perdu ! <br> Cliquez sur le casse brique pour recommencer.`
+            const text = document.querySelector('.text')
+            text.innerHTML = `Perdu ! Cliquez sur le jeu pour le relancer`
 
         }
     } 
-
-
 //effet de deplacement
         x += vitesseX;
         y += vitesseY;

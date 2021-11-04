@@ -10,14 +10,14 @@
 }
 
 body{
-    background: url('halloween.jpg') no-repeat;
+    background: url('noel.webp') no-repeat;
     background-size: cover;
-    background-position-y: 50%;
+    background-position-y: 35%;
     font-weight: bold;
     font-family: 'Fruktur-Regular';
     text-align: center;
     font-size: 1.5em;
-    color : orange
+    color : red;
 }
 
 h1, h2 {
@@ -26,14 +26,12 @@ h1, h2 {
     font-family: 'Fruktur-Regular';
 }
 
-
-
-
 canvas
 {
     display: block;
     margin: 0 auto;
     margin-top: 10px;
-    background : url('dewee.png') no-repeat;
+    background : url('dobby.png') no-repeat;
     background-size: cover;
+    background-position-y: 40%;
 }

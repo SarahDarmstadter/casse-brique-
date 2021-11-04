@@ -1,0 +1,26 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background: cornflowerblue;
+}
+
+h1, h2, p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+canvas
+{
+    display: block;
+    margin: 0 auto;
+    background : url('dewee.png') no-repeat;
+    background-size: cover;
+}
